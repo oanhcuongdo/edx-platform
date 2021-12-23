@@ -446,8 +446,7 @@ class TestSafeSessionMiddleware(TestSafeSessionsLogMixin, CacheIsolationTestCase
             }, 300
         )
 
-        # send second successful request with no user change and assert request header is logged again
-        # TODO: cache user_id change and assert on logging request header
+        # send successful request; request header should be logged for earlier mismatched user id
         self.set_up_for_success()
         SafeSessionMiddleware().process_response(self.request, self.client.response)
         # Note: The test cache is not returning True because it is not retaining its values
