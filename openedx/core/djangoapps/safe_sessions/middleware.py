@@ -586,7 +586,7 @@ class SafeSessionMiddleware(SessionMiddleware, MiddlewareMixin):
                     # cache the fact that we should continue logging request headers for these user ids
                     #   for future requests until the cache values timeout.
                     cache_values = {
-                        SafeSessionMiddleware._get_recent_user_change_cache_key(user_id):True
+                        SafeSessionMiddleware._get_recent_user_change_cache_key(user_id): True
                         for user_id in set(request.user_id_list)
                     }
                     cache.set_many(cache_values, LOG_REQUEST_USER_CHANGE_HEADERS_DURATION)
