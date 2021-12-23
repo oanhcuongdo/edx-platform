@@ -430,17 +430,30 @@ class TestSafeSessionMiddleware(TestSafeSessionsLogMixin, CacheIsolationTestCase
 
     @patch("openedx.core.djangoapps.safe_sessions.middleware.LOG_REQUEST_USER_CHANGES", True)
     @patch("openedx.core.djangoapps.safe_sessions.middleware.LOG_REQUEST_USER_CHANGE_HEADERS", True)
+    @patch("openedx.core.djangoapps.safe_sessions.middleware.cache")
     @patch("openedx.core.djangoapps.safe_sessions.middleware.log")
-    def test_with_header_logging(self, mock_log):
+    def test_with_header_logging(self, mock_log, mock_cache):
         self.set_up_for_success()
         self.request.user = UserFactory.create()
         with self.assert_logged('SafeCookieData: Changing request user. ', log_level='warning'):
             SafeSessionMiddleware().process_response(self.request, self.client.response)
+        # Note: Since the test cache is not retaining its values for some reason, we'll
+        #   simply assert that the cache is set (here) and checked (below).
+        mock_cache.set_many.assert_called_with(
+            {
+                'safe_sessions.middleware.recent_user_change_detected_1': True,
+                'safe_sessions.middleware.recent_user_change_detected_2': True
+            }, 300
+        )
 
         # send second successful request with no user change and assert request header is logged again
         # TODO: cache user_id change and assert on logging request header
         self.set_up_for_success()
         SafeSessionMiddleware().process_response(self.request, self.client.response)
+        # Note: The test cache is not returning True because it is not retaining its values
+        #   for some reason. Rather than asserting that we log the header appropriately, we'll
+        #   simply verify that we are checking the cache.
+        mock_cache.get.assert_called_with('safe_sessions.middleware.recent_user_change_detected_1', False)
 
     def test_no_warn_on_expected_user_change(self):
         """
