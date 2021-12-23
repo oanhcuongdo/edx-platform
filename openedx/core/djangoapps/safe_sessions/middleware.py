@@ -580,7 +580,7 @@ class SafeSessionMiddleware(SessionMiddleware, MiddlewareMixin):
             if hasattr(request, 'user_id_list') and request.user_id_list:
                 string_user_id_list = [str(user_id) for user_id in request.user_id_list]
                 user_ids_string = ','.join(string_user_id_list)
-                set_custom_attribute(f'safe_sessions.user_id_list', user_ids_string)
+                set_custom_attribute('safe_sessions.user_id_list', user_ids_string)
 
                 if LOG_REQUEST_USER_CHANGE_HEADERS:
                     # cache the fact that we should continue logging request headers for these user ids
@@ -673,10 +673,12 @@ class SafeSessionMiddleware(SessionMiddleware, MiddlewareMixin):
 
     @staticmethod
     def _get_recent_user_change_cache_key(user_id):
+        """ Get cache key for flaging a recent mismatch for the provided user id. """
         return f"safe_sessions.middleware.recent_user_change_detected_{user_id}"
 
     @staticmethod
     def _get_encrypted_request_headers(request):
+        """ Return an encrypted version of the request headers. """
         # WARNING: DO NOT MERGE AS-IS!
         # TODO: Encrypt the header
         # NOTE: request.headers seems to pick up initial values, but won't adjust as the request object is edited.
