@@ -582,7 +582,7 @@ def is_self_paced(course):
     return course and course.self_paced
 
 
-def get_sibling_urls(subsection):
+def get_sibling_urls(subsection, unit_location):
     """
     Given a subsection, returns the urls for the next and previous units.
 
@@ -592,25 +592,23 @@ def get_sibling_urls(subsection):
     section = subsection.get_parent()
     prev_url = next_url = ''
     prev_loc = next_loc = None
-    last_block = None
-    siblings = list(section.get_children())
-    for i, block in enumerate(siblings):
-        if block.location == subsection.location:
-            if last_block:
-                try:
-                    prev_loc = last_block.get_children()[0].location
-                except IndexError:
-                    pass
-            try:
-                next_loc = siblings[i + 1].get_children()[0].location
-            except IndexError:
-                pass
-            break
-        last_block = block
+
+    unit_index = subsection.children.index(unit_location)
+    try:
+        if unit_index > 0:
+            prev_loc = subsection.children[unit_index - 1]
+    except IndexError:
+        pass
+
+    try:
+        next_loc = subsection.children[unit_index + 1]
+    except IndexError:
+        pass
+
     if not prev_loc:
         try:
             # section.get_parent SHOULD return the course, but for some reason, it might not
-            sections = section.get_parent().get_children()
+            sections = section.get_children()
         except AttributeError:
             log.error("URL Retrieval Error # 1: subsection {subsection} included in section {section}".format(
                 section=section.location,
@@ -620,13 +618,15 @@ def get_sibling_urls(subsection):
             # won't display a link to a previous unit.
         else:
             try:
-                prev_section = sections[sections.index(next(s for s in sections if s.location == section.location)) - 1]
-                prev_loc = prev_section.get_children()[-1].get_children()[-1].location
+                prev_section = sections[sections.index(
+                    next(s for s in sections if s.location == subsection.location)) - 1]
+                prev_loc = prev_section.get_children()[-1].location
             except IndexError:
                 pass
+
     if not next_loc:
         try:
-            sections = section.get_parent().get_children()
+            sections = section.get_children()
         except AttributeError:
             log.error("URL Retrieval Error # 2: subsection {subsection} included in section {section}".format(
                 section=section.location,
@@ -634,8 +634,9 @@ def get_sibling_urls(subsection):
             ))
         else:
             try:
-                next_section = sections[sections.index(next(s for s in sections if s.location == section.location)) + 1]
-                next_loc = next_section.get_children()[0].get_children()[0].location
+                next_section = sections[sections.index(
+                    next(s for s in sections if s.location == subsection.location)) + 1]
+                next_loc = next_section.get_children()[0].location
             except IndexError:
                 pass
     if prev_loc:
