@@ -20,6 +20,7 @@ from lms.djangoapps.course_goals.tests.factories import (
 from lms.djangoapps.certificates.data import CertificateStatuses
 from lms.djangoapps.certificates.tests.factories import GeneratedCertificateFactory
 from openedx.core.djangolib.testing.utils import skip_unless_lms
+from openedx.features.course_experience import ENABLE_COURSE_GOALS
 
 # Some constants just for clarity of tests (assuming week starts on a Monday, as March 2021 used below does)
 MONDAY = 0

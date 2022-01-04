@@ -26,11 +26,7 @@ from common.djangoapps.student.models import CourseEnrollment
 from common.djangoapps.util.views import expose_header
 from lms.djangoapps.course_goals.api import (
     add_course_goal,
-    add_course_goal_deprecated,
     get_course_goal,
-    get_course_goal_text,
-    has_course_goal_permission,
-    valid_course_goals_ordered
 )
 from lms.djangoapps.course_goals.models import CourseGoal
 from lms.djangoapps.course_home_api.outline.serializers import OutlineTabSerializer
