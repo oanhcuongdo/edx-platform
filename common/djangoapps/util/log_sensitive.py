@@ -15,7 +15,7 @@ Usage:
 
    This will log a message like::
 
-     Received invalid auth token ZXIzljFT7zTTuXyIB/jy4XTixL34EhI6pY0Gw4mxfFo=|IYS4JDE0S9wypALb5HfoeW9YB/CnSx35/PkspsecZyzTP1Zr8B/W+16Gfe+pRZhjBitQ66XTZk9YHwKfznQ1KA== in Authorization header
+     Received invalid auth token ZXI...fFo=|IYS...1KA== in Authorization header
 
 4. If you need to decrypt one of these messages, save the encrypted portion
    to file, retrieve the securely held private key, and run::
