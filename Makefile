@@ -153,3 +153,13 @@ docker_push: docker_tag docker_auth ## push to docker hub
 	docker push "openedx/cms:${GITHUB_SHA}"
 	docker push "openedx/cms-dev:latest"
 	docker push "openedx/cms-dev:${GITHUB_SHA}"
+
+docker_push_kyle:
+	docker tag openedx/lms kdmccormick96/lms
+	docker tag openedx/cms kdmccormick96/cms
+	docker tag openedx/lms-dev kdmccormick96/lms-dev
+	docker tag openedx/cms-dev kdmccormick96/cms-dev
+	docker push 'kdmccormick96/lms:latest'
+	docker push 'kdmccormick96/cms:latest'
+	docker push 'kdmccormick96/lms-dev:latest'
+	docker push 'kdmccormick96/cms-dev:latest'
