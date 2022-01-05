@@ -113,8 +113,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2021-12-26 20:42+0000\n"
-"PO-Revision-Date: 2021-11-07 20:44+0000\n"
+"POT-Creation-Date: 2021-10-31 20:43+0000\n"
+"PO-Revision-Date: 2021-08-01 20:44+0000\n"
 "Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/open-edx/edx-platform/language/vi/)\n"
 "Language: vi\n"
@@ -3621,7 +3621,7 @@ msgstr "Tab hiện tại"
 
 #: lms/static/js/edxnotes/views/tabs/course_structure.js
 msgid "Location in Course"
-msgstr "Vị trí trong Khoá học"
+msgstr "Vị trí trong Dự án Khởi nghiệp"
 
 #: lms/static/js/edxnotes/views/tabs/recent_activity.js
 msgid "Recent Activity"
@@ -4873,15 +4873,15 @@ msgstr "Đang lưu tuỳ chọn email của bạn"
 
 #: lms/static/js/student_account/views/FinishAuthView.js
 msgid "Enrolling you in the selected course"
-msgstr "Đang ghi danh cho khoá học đã chọn"
+msgstr "Đang ghi danh cho Dự án Khởi nghiệp đã chọn"
 
 #: lms/static/js/student_account/views/FinishAuthView.js
 msgid "Adding the selected course to your cart"
-msgstr "Đang thêm khoá học đã chọn vào giỏ hàng "
+msgstr "Đang thêm Dự án Khởi nghiệp đã chọn vào giỏ hàng "
 
 #: lms/static/js/student_account/views/FinishAuthView.js
 msgid "Loading your courses"
-msgstr "Đang tải các khoá học"
+msgstr "Đang tải các Dự án Khởi nghiệp"
 
 #: lms/static/js/student_account/views/FormView.js
 #: lms/static/js/student_account/views/RegisterView.js
@@ -5069,7 +5069,7 @@ msgid ""
 "in your browser's local time zone."
 msgstr ""
 "Chọn múi giờ để hiển thị ngày khóa học. Nếu bạn không chỉ định múi giờ, ngày"
-" bắt đầu khoá học, thời hạn khoá học, sẽ được hiển thị trong múi giờ địa "
+" bắt đầu Dự án Khởi nghiệp, thời hạn Dự án Khởi nghiệp, sẽ được hiển thị trong múi giờ địa "
 "phương của trình duyệt."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
@@ -5537,7 +5537,7 @@ msgid ""
 "interests are, why you're taking courses, or what you hope to learn."
 msgstr ""
 "Chia sẻ với các học viên khác về bản thân bạn: nơi bạn sống, sở thích, lý do"
-" chọn học một khoá học nào đó, hoặc những gì bạn muốn học được."
+" chọn học một Dự án Khởi nghiệp nào đó, hoặc những gì bạn muốn học được."
 
 #: openedx/features/learner_profile/static/learner_profile/js/views/badge_list_container.js
 msgid "Accomplishments Pagination"
@@ -5687,7 +5687,7 @@ msgstr "Xuất ra thất bại."
 
 #: cms/static/js/factories/manage_users.js
 msgid "Already a course team member"
-msgstr "Đã là thành viên của khoá học rồi"
+msgstr "Đã là thành viên của Dự án Khởi nghiệp rồi"
 
 #: cms/static/js/factories/manage_users.js
 msgid ""
@@ -5878,7 +5878,7 @@ msgstr "Tất cả các nhóm phải có một tên riêng."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The course must have an assigned start date."
-msgstr "Khoá học phải ấn định ngày bắt đầu."
+msgstr "Dự án Khởi nghiệp phải ấn định ngày bắt đầu."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The course end date must be later than the course start date."
@@ -6201,13 +6201,13 @@ msgid ""
 " identify the failed component. Inspect your course to identify any "
 "problematic components and try again."
 msgstr ""
-"Không thể xuất khoá học của bạn sang tệp XML. Không có đủ thông tin để tìm "
-"ra phần bị lỗi. Bạn nên kiểm tra lại khoá học của bạn để tìm ra phần bị lỗi "
+"Không thể xuất Dự án Khởi nghiệp của bạn sang tệp XML. Không có đủ thông tin để tìm "
+"ra phần bị lỗi. Bạn nên kiểm tra lại Dự án Khởi nghiệp của bạn để tìm ra phần bị lỗi "
 "và thử lại."
 
 #: cms/static/js/views/export.js
 msgid "Take me to the main course page"
-msgstr "Mở trang khoá học chính"
+msgstr "Mở trang Dự án Khởi nghiệp chính"
 
 #: cms/static/js/views/export.js
 msgid "The raw error message is:"
@@ -7547,7 +7547,7 @@ msgstr "Không có kết quả"
 
 #: lms/djangoapps/support/static/support/templates/certificates_results.underscore
 msgid "Course Key"
-msgstr "Key khoá học"
+msgstr "Key Dự án Khởi nghiệp"
 
 #: lms/djangoapps/support/static/support/templates/certificates_results.underscore
 msgid "Status"
@@ -9139,14 +9139,14 @@ msgstr "Hình ảnh ID được cấp bới chính phủ"
 #: lms/templates/verify_student/make_payment_step.underscore
 msgid ""
 "ID-Verification is not required for this Professional Education course."
-msgstr "Khoá học cao cấp này không yêu cầu xác nhận ID."
+msgstr "Dự án Khởi nghiệp cao cấp này không yêu cầu xác nhận ID."
 
 #: lms/templates/verify_student/make_payment_step.underscore
 msgid ""
 "All professional education courses are fee-based, and require payment to "
 "complete the enrollment process."
 msgstr ""
-"Tất cả khoá học cao cấp đều tính học phí, và cần thanh toán để hoàn tất quá "
+"Tất cả Dự án Khởi nghiệp cao cấp đều tính học phí, và cần thanh toán để hoàn tất quá "
 "trình ghi danh."
 
 #: lms/templates/verify_student/make_payment_step.underscore
@@ -9715,7 +9715,7 @@ msgid ""
 "After the course\\'s end date has passed, learners can no longer access "
 "subsection content. The subsection remains included in grade calculations."
 msgstr ""
-"Sau ngày kết thúc khoá học, người học không còn có thể truy cập vào phần con"
+"Sau ngày kết thúc Dự án Khởi nghiệp, người học không còn có thể truy cập vào phần con"
 " nữa. Các phần con vẫn được bao gồm trong tính điểm."
 
 #: cms/templates/js/content-visibility-editor.underscore
@@ -9735,7 +9735,7 @@ msgid ""
 "Learners do not see the subsection in the course outline. The subsection is "
 "not included in grade calculations."
 msgstr ""
-"Người học không nhìn thấy phần con trong đề cương khoá học. Các phần con "
+"Người học không nhìn thấy phần con trong đề cương Dự án Khởi nghiệp. Các phần con "
 "không được bao gồm trong tính điểm."
 
 #: cms/templates/js/content-visibility-editor.underscore

@@ -198,7 +198,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2021-12-26 20:42+0000\n"
+"POT-Creation-Date: 2021-10-31 20:43+0000\n"
 "PO-Revision-Date: 2019-01-20 20:43+0000\n"
 "Last-Translator: Le Minh Tri <trilm@hihexa.com>, 2020\n"
 "Language-Team: Vietnamese (https://www.transifex.com/open-edx/teams/6205/vi/)\n"
@@ -2777,7 +2777,7 @@ msgstr ""
 #: lms/templates/courseware/info.html
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Course Handouts"
-msgstr " Tài liệu khoá học"
+msgstr " Tài liệu Dự án Khởi nghiệp"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
@@ -5515,15 +5515,15 @@ msgstr ""
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html
 msgid ""
 "\n"
-"                            There’s still time to reach your goal\n"
-"                        "
+"                        There's still time to reach your goal\n"
+"                    "
 msgstr ""
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html
 #, python-format, python-brace-format
 msgid ""
 "\n"
-"                            You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. You’re not quite there, but there's still time to reach that goal!\n"
+"                            You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. You're not quite there, but there's still time to reach that goal!\"\n"
 "                            "
 msgid_plural ""
 "\n"
@@ -5534,15 +5534,15 @@ msgstr[0] ""
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html
 msgid ""
 "\n"
-"                                Jump back in\n"
-"                            "
+"                            Jump back in\n"
+"                        "
 msgstr ""
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html
 msgid ""
 "\n"
-"                            Remember, you can always change your learning goal. The best goal is one that you can stick to.\n"
-"                        "
+"                        Remember, you can always change your learning goal. The best goal is one that you can stick to.\n"
+"                    "
 msgstr ""
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html
@@ -5555,8 +5555,8 @@ msgstr ""
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html
 msgid ""
 "\n"
-"                            Unsubscribe from goal reminder emails for this course\n"
-"                        "
+"                        Unsubscribe from goal reminder emails to this course\n"
+"                    "
 msgstr ""
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.txt
@@ -5996,10 +5996,7 @@ msgid ""
 "Maintain exam integrity by enabling a proctoring solution for your course"
 msgstr ""
 
-#. #-#-#-#-#  mako-studio.po (edx-platform)  #-#-#-#-#
-#. Translators: Custom Pages refer to the tabs that appear in the top
-#. navigation of each course.
-#: lms/djangoapps/courseware/plugins.py cms/templates/edit-tabs.html
+#: lms/djangoapps/courseware/plugins.py
 msgid "Custom pages"
 msgstr ""
 
@@ -7710,6 +7707,13 @@ msgstr ""
 #: lms/templates/admin/user_api/accounts/cancel_retirement_action.html
 #, python-format
 msgid "Are you sure you want to cancel retirement for user \"%(username)s\"? "
+msgstr ""
+
+#: lms/templates/goal_reminder_banner.html
+msgid ""
+"\n"
+"                You’re almost there!\n"
+"            "
 msgstr ""
 
 #: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.html
@@ -10023,16 +10027,8 @@ msgid ""
 msgstr ""
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
-#, python-brace-format
 msgid ""
-"This email is already associated with an existing or previous "
-"{settings.PLATFORM_NAME} account"
-msgstr ""
-
-#: openedx/core/djangoapps/user_api/accounts/__init__.py
-msgid ""
-"The password you entered is on a list of known compromised passwords. Please"
-" choose a different one."
+"This email is already associated with an existing or previous edX account"
 msgstr ""
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
@@ -11125,11 +11121,6 @@ msgid "You have used {attempts} of unlimited attempts for this problem."
 msgstr ""
 
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html
-#: cms/templates/widgets/header.html
-msgid "Sign In"
-msgstr ""
-
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html
 msgid "Our mailing address is"
 msgstr ""
 
@@ -11328,7 +11319,7 @@ msgid ""
 "Take the specified course and attempt to export it to a git repository\n"
 ". Course directory must already be a git repository. Usage:  git_export <course_loc> <git_url>"
 msgstr ""
-"Lấy khoá học và xuất vào kho git\n"
+"Lấy Dự án Khởi nghiệp và xuất vào kho git\n"
 ". Thư mục của khóa học phải là một kho git. Cách sử dụng: git_export <course_loc> <git_url>"
 
 #: cms/djangoapps/contentstore/rest_api/v0/serializers/advanced_settings.py
@@ -11526,8 +11517,8 @@ msgid ""
 "There is already a course defined with the same organization and course "
 "number. Please change either organization or course number to be unique."
 msgstr ""
-"Đã có một khoá học có trùng tên tổ chức và mã số. Xin vui lòng đổi tên tổ "
-"chức hoặc mã số khoá học để phân biệt khoá học này."
+"Đã có một Dự án Khởi nghiệp có trùng tên tổ chức và mã số. Xin vui lòng đổi tên tổ "
+"chức hoặc mã số Dự án Khởi nghiệp để phân biệt Dự án Khởi nghiệp này."
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid ""
@@ -11587,11 +11578,11 @@ msgstr "Kiểm tra đầu vào - Mục con"
 
 #: cms/djangoapps/contentstore/views/entrance_exam.py
 msgid "Completed Course Entrance Exam"
-msgstr "Đã hoàn thành Bài kiểm tra đầu vào Khoá học"
+msgstr "Đã hoàn thành Bài kiểm tra đầu vào Dự án Khởi nghiệp"
 
 #: cms/djangoapps/contentstore/views/export_git.py
 msgid "Course successfully exported to git repository"
-msgstr "Xuất thành công khoá học vào kho git"
+msgstr "Xuất thành công Dự án Khởi nghiệp vào kho git"
 
 #: cms/djangoapps/contentstore/views/helpers.py
 msgid "Vertical"
@@ -12002,7 +11993,7 @@ msgid ""
 "view dry runs the force publish command"
 msgstr ""
 "Đôi khi những phần dự thảo và đã xuất bản của một khóa học có thể không đồng"
-" bộ. Lệnh Bắt buộc xuất bản khoá học thiết lập lại phần đã xuất bản của khoá"
+" bộ. Lệnh Bắt buộc xuất bản Dự án Khởi nghiệp thiết lập lại phần đã xuất bản của khoá"
 " học để trỏ đến phần dự thảo, có tác dụng bắt buộc xuất bản khóa học. Chế độ"
 " xem này bắt buộc chạy lệnh xuất bản"
 
@@ -12022,7 +12013,7 @@ msgstr "Vui lòng cung cấp id khóa học."
 
 #: cms/djangoapps/maintenance/views.py
 msgid "Invalid course key."
-msgstr "Mã khoá học không đúng"
+msgstr "Mã Dự án Khởi nghiệp không đúng"
 
 #: cms/djangoapps/maintenance/views.py
 msgid "No matching course found."
@@ -12031,7 +12022,7 @@ msgstr "Không tìm thấy khóa học phù hợp."
 #: cms/djangoapps/maintenance/views.py
 msgid "Force publishing course is not supported with old mongo courses."
 msgstr ""
-"Bắt buộc xuất bản khoá học không được hỗ trợ với các khóa học mango cũ."
+"Bắt buộc xuất bản Dự án Khởi nghiệp không được hỗ trợ với các khóa học mango cũ."
 
 #: cms/djangoapps/maintenance/views.py
 msgid "Course is already in published state."
@@ -12913,7 +12904,7 @@ msgstr "Thiết lập chế độ xem trước"
 
 #: lms/templates/preview_menu.html
 msgid "You are now viewing the course as {i_start}{user_name}{i_end}."
-msgstr "Bạn đang xem khoá học với tên là  {i_start}{user_name}{i_end}."
+msgstr "Bạn đang xem Dự án Khởi nghiệp với tên là  {i_start}{user_name}{i_end}."
 
 #: lms/templates/preview_menu.html
 msgid "View in the new experience"
@@ -14660,11 +14651,11 @@ msgstr ""
 
 #: lms/templates/certificates/server-error.html
 msgid "The institution that is linked to the course."
-msgstr "Tổ chức cung cấp khoá học."
+msgstr "Tổ chức cung cấp Dự án Khởi nghiệp."
 
 #: lms/templates/certificates/server-error.html
 msgid "The course information in the Course Administration tool."
-msgstr "Thông tin về khóa học có trên thanh công cụ Quản lý Khoá học."
+msgstr "Thông tin về khóa học có trên thanh công cụ Quản lý Dự án Khởi nghiệp."
 
 #: lms/templates/certificates/server-error.html
 msgid ""
@@ -14744,7 +14735,7 @@ msgid ""
 "{b_start}Eligible for credit:{b_end} Receive academic credit after "
 "successfully completing the course"
 msgstr ""
-"{b_start}Tín chỉ: {b_end} Bạn có thể lấy tín chỉ sau khi hoàn thành khoá học"
+"{b_start}Tín chỉ: {b_end} Bạn có thể lấy tín chỉ sau khi hoàn thành Dự án Khởi nghiệp"
 " này. "
 
 #: lms/templates/course_modes/choose.html
@@ -14828,7 +14819,7 @@ msgstr ""
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
 msgid "Audit This Course"
-msgstr "Dự thính khoá học này"
+msgstr "Dự thính Dự án Khởi nghiệp này"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14970,6 +14961,10 @@ msgstr ""
 msgid "Get access to the course material, including videos and readings"
 msgstr ""
 
+#: lms/templates/course_modes/unfbe.html
+msgid "Some graded content may be locked"
+msgstr ""
+
 #: lms/templates/courseware/accordion.html
 msgid "{chapter} current chapter"
 msgstr "{chapter} chương hiện tại"
@@ -14999,7 +14994,7 @@ msgstr "Có lỗi xảy ra. Vui lòng thử lại sau."
 
 #: lms/templates/courseware/course_about.html
 msgid "You are enrolled in this course"
-msgstr "Bạn đã ghi danh vào khoá học này."
+msgstr "Bạn đã ghi danh vào Dự án Khởi nghiệp này."
 
 #: lms/templates/courseware/course_about.html
 msgid "Course is full"
@@ -15035,7 +15030,7 @@ msgstr "Số giờ học mỗi tuần"
 
 #: lms/templates/courseware/course_about.html
 msgid "Prerequisites"
-msgstr "Yêu cầu của khoá học"
+msgstr "Yêu cầu của Dự án Khởi nghiệp"
 
 #: lms/templates/courseware/course_about.html
 #: lms/templates/dashboard/_dashboard_course_listing.html
@@ -15070,23 +15065,23 @@ msgstr "Tôi vừa mới ghi danh vào {number} {title}  qua {platform} {url}"
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 msgid "Take a course with {platform} online"
-msgstr "Tham gia một khoá học với {platform} online"
+msgstr "Tham gia một Dự án Khởi nghiệp với {platform} online"
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 #: themes/stanford-style/lms/templates/courseware/course_about_sidebar_header.html
 msgid "Tweet that you've enrolled in this course"
-msgstr "Thông báo trên Twitter rằng bạn đã ghi danh vào khoá học này"
+msgstr "Thông báo trên Twitter rằng bạn đã ghi danh vào Dự án Khởi nghiệp này"
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 msgid "Post a Facebook message to say you've enrolled in this course"
 msgstr ""
-"Đăng một thông điệp Facebook nói rằng bạn đã ghi danh vào khoá học này"
+"Đăng một thông điệp Facebook nói rằng bạn đã ghi danh vào Dự án Khởi nghiệp này"
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 #: themes/stanford-style/lms/templates/courseware/course_about_sidebar_header.html
 msgid "Email someone to say you've enrolled in this course"
 msgstr ""
-"Gửi email cho một người nào đó thông báo rằng bạn dã ghi danh vào khoá học "
+"Gửi email cho một người nào đó thông báo rằng bạn dã ghi danh vào Dự án Khởi nghiệp "
 "này"
 
 #: lms/templates/courseware/course_navigation.html
@@ -15160,7 +15155,7 @@ msgid ""
 "To access course materials, you must score {required_score}% or higher on "
 "this                     exam. Your current score is {current_score}%."
 msgstr ""
-"Để truy cập tài liệu hướng dẫn khoá học, bạn phải đạt được điểm số "
+"Để truy cập tài liệu hướng dẫn Dự án Khởi nghiệp, bạn phải đạt được điểm số "
 "{required_score}% hoặc cao hơn trong kỳ thi này. Điểm số hiện tại của bạn là"
 " {current_score}%."
 
@@ -15171,7 +15166,7 @@ msgstr ""
 
 #: lms/templates/courseware/dates.html lms/templates/courseware/syllabus.html
 msgid "{course.display_number_with_default} Course Info"
-msgstr "{course.display_number_with_default} Thông tin khoá học"
+msgstr "{course.display_number_with_default} Thông tin Dự án Khởi nghiệp"
 
 #: lms/templates/courseware/dates.html
 msgid "Important Dates"
@@ -15264,7 +15259,7 @@ msgstr "Tài liệu handout"
 #: lms/templates/courseware/info.html
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Course Tools"
-msgstr "Công cụ Khoá học"
+msgstr "Công cụ Dự án Khởi nghiệp"
 
 #: lms/templates/courseware/news.html
 msgid "News - MITx 6.002x"
@@ -15340,7 +15335,7 @@ msgstr "Độ dài Trung bình"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "{weeks_to_complete} weeks per course"
-msgstr "{weeks_to_complete} tuần mỗi khoá học"
+msgstr "{weeks_to_complete} tuần mỗi Dự án Khởi nghiệp"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "Effort"
@@ -15352,7 +15347,7 @@ msgid ""
 "course"
 msgstr ""
 "{min_hours_effort_per_week}-{max_hours_effort_per_week} giờ mỗi tuần, mỗi "
-"khoá học"
+"Dự án Khởi nghiệp"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "Number of Courses"
@@ -15360,7 +15355,7 @@ msgstr "Số lượng Khóa học"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "{number_of_courses} courses in program"
-msgstr "{number_of_courses} khoá học trong chương trình"
+msgstr "{number_of_courses} Dự án Khởi nghiệp trong chương trình"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "Price (USD)"
@@ -15439,7 +15434,7 @@ msgstr ""
 
 #: lms/templates/courseware/progress.html
 msgid "Information about course credit requirements"
-msgstr "Thông tin về các yêu cầu để được lấy tín chỉ cho khoá học"
+msgstr "Thông tin về các yêu cầu để được lấy tín chỉ cho Dự án Khởi nghiệp"
 
 #: lms/templates/courseware/progress.html
 msgid "display_name"
@@ -15553,7 +15548,7 @@ msgid ""
 "finish a degree already started, or fulfill requirements at a different "
 "academic institution."
 msgstr ""
-"Tín chỉ của một khoá học có thể giúp bạn có một bước khởi đầu tích cực tiến "
+"Tín chỉ của một Dự án Khởi nghiệp có thể giúp bạn có một bước khởi đầu tích cực tiến "
 "tới tấm bằng đại học, hoàn thành một chứng chỉ, hoặc đáp ứng các yêu cầu bởi"
 " một viện giáo dục khác. "
 
@@ -15679,7 +15674,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Complete our course feedback survey"
-msgstr "Làm khảo sát về khoá học của chúng tôi"
+msgstr "Làm khảo sát về Dự án Khởi nghiệp của chúng tôi"
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Add Certificate to LinkedIn Profile"
@@ -15823,7 +15818,7 @@ msgstr ""
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "You only have {days} day left to verify for this course."
 msgid_plural "You only have {days} days left to verify for this course."
-msgstr[0] "Bạn chỉ còn {days} ngày nữa để xác thực cho khoá học này."
+msgstr[0] "Bạn chỉ còn {days} ngày nữa để xác thực cho Dự án Khởi nghiệp này."
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Almost there!"
@@ -15955,7 +15950,7 @@ msgid ""
 "{provider_name} did not approve your request for course credit. For more "
 "information, contact {link_to_provider_site} directly."
 msgstr ""
-"{provider_name} không chấp nhận yêu cầu tín chỉ của bạn cho khoá học này. Để"
+"{provider_name} không chấp nhận yêu cầu tín chỉ của bạn cho Dự án Khởi nghiệp này. Để"
 " biết thêm chi tiết, vui lòng liên hệ tại {link_to_provider_site}."
 
 #: lms/templates/dashboard/_dashboard_credit_info.html
@@ -16267,7 +16262,7 @@ msgstr "Ghi chú của học viên"
 
 #: lms/templates/edxnotes/edxnotes.html
 msgid "Highlights and notes you've made in course content"
-msgstr "Các nội dung highlights và notes của bạn về nội dung của khoá học"
+msgstr "Các nội dung highlights và notes của bạn về nội dung của Dự án Khởi nghiệp"
 
 #: lms/templates/edxnotes/edxnotes.html
 msgid "Search notes for:"
@@ -16286,7 +16281,7 @@ msgid ""
 "You have not made any notes in this course yet. Other students in this "
 "course are using notes to:"
 msgstr ""
-"Bạn đã không ghi chú gì trong cả khoá học này. Các học viên khác đang dùng "
+"Bạn đã không ghi chú gì trong cả Dự án Khởi nghiệp này. Các học viên khác đang dùng "
 "sổ ghi chú để: "
 
 #: lms/templates/edxnotes/edxnotes.html
@@ -16444,7 +16439,7 @@ msgid ""
 "To enroll in {course_names} we have provided a registration URL for you.  "
 "Please follow the instructions below to claim your access."
 msgstr ""
-"Để ghi danh vào khoá học {course_names}, chúng tôi đã gửi đường link đăng kí"
+"Để ghi danh vào Dự án Khởi nghiệp {course_names}, chúng tôi đã gửi đường link đăng kí"
 " cho bạn. Hãy làm theo hướng dẫn phía dưới để truy cập. "
 
 #. Translators: please translate the text inside [[ ]]. This is meant as a
@@ -16476,14 +16471,14 @@ msgid ""
 "(4) You should be able to click on 'view course' button or see your course "
 "on your student dashboard at {url}"
 msgstr ""
-"(4) Bạn sẽ thấy nút 'Xem khoá học' hoặc cũng có thể xem khoá học từ bảng "
+"(4) Bạn sẽ thấy nút 'Xem Dự án Khởi nghiệp' hoặc cũng có thể xem Dự án Khởi nghiệp từ bảng "
 "thông tin của mình tại {url}"
 
 #: lms/templates/emails/business_order_confirmation_email.txt
 msgid ""
 "(5) Course materials will not be available until the course start date."
 msgstr ""
-"(5) Tài liệu khóa học sẽ không xem được cho tới khi khoá học bắt đầu. "
+"(5) Tài liệu khóa học sẽ không xem được cho tới khi Dự án Khởi nghiệp bắt đầu. "
 
 #. Translators: please translate the text inside [[ ]]. This is meant as a
 #. template for course teams to use. Please also keep the <p> and </p> HTML
@@ -16586,7 +16581,7 @@ msgid ""
 "in the {course_name} course."
 msgstr ""
 "Danh tính của bạn đã được kiểm định thành công cho việc đánh giá "
-"{assessment} trong khoá học {course_name}. "
+"{assessment} trong Dự án Khởi nghiệp {course_name}. "
 
 #: lms/templates/emails/reverification_processed.txt
 msgid ""
@@ -16595,7 +16590,7 @@ msgid ""
 "{allowed_attempts} attempts to verify your identity."
 msgstr ""
 "Chúng tôi không thể xác nhận danh tính của bạn cho đánh giá {assessment} "
-"trong khoá học {course_name}. Bạn đã thử {used_attempts} trong tổng số "
+"trong Dự án Khởi nghiệp {course_name}. Bạn đã thử {used_attempts} trong tổng số "
 "{allowed_attempts} lần để xác thực danh tính của mình. "
 
 #: lms/templates/emails/reverification_processed.txt
@@ -16617,7 +16612,7 @@ msgid ""
 "longer possible."
 msgstr ""
 "Chúng tối không thể xác thực danh tính của bạn cho đánh giá {assessment} "
-"trong khoá học {course_name}. Bạn đã thử {used_attempts} trong tổng số "
+"trong Dự án Khởi nghiệp {course_name}. Bạn đã thử {used_attempts} trong tổng số "
 "{allowed_attempts} lần để xác thực danh tính của mình, vì vậy bạn không thể "
 "tiếp tục việc xác thực."
 
@@ -16652,7 +16647,7 @@ msgid ""
 "course from a country or region in which it is not currently available."
 msgstr ""
 "Hệ thống của chúng tôi cho thấy bạn đang truy cập {platform_name} từ một "
-"quốc gia hoặc một vùng không dành cho khoá học này."
+"quốc gia hoặc một vùng không dành cho Dự án Khởi nghiệp này."
 
 #: lms/templates/embargo/default_enrollment.html
 msgid ""
@@ -16660,7 +16655,7 @@ msgid ""
 "course from a country or region in which it is not currently available."
 msgstr ""
 "Hệ thống của chúng tôi cho thấy bạn đang truy cập {platform_name} từ một "
-"quốc gia hoặc một vùng không dành cho khoá học này."
+"quốc gia hoặc một vùng không dành cho Dự án Khởi nghiệp này."
 
 #: lms/templates/enrollment/course_enrollment_message.html
 msgid "Enrollment Successful"
@@ -17045,11 +17040,11 @@ msgstr "Tên khóa học:"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course Start Date:"
-msgstr "Ngày khoá học bắt đầu:"
+msgstr "Ngày Dự án Khởi nghiệp bắt đầu:"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course End Date:"
-msgstr "Ngày kết thúc khoá học"
+msgstr "Ngày kết thúc Dự án Khởi nghiệp"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "No end date set"
@@ -17081,7 +17076,7 @@ msgstr "Grade Cutoffs:"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course Warnings"
-msgstr "Lưu ý về khoá học"
+msgstr "Lưu ý về Dự án Khởi nghiệp"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid ""
@@ -17161,7 +17156,7 @@ msgstr "Nhận được ID CSV học viên ẩn danh ID CSV"
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid ""
 "Click to generate a CSV file of all proctored exam results in this course."
-msgstr "Nhấp để tạo file CSV của tất cả kết quả kiểm tra trong khoá học này. "
+msgstr "Nhấp để tạo file CSV của tất cả kết quả kiểm tra trong Dự án Khởi nghiệp này. "
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "Generate Proctored Exam Results Report"
@@ -17199,7 +17194,7 @@ msgstr ""
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/certificates.html
 msgid "Click to list certificates that are issued for this course:"
-msgstr "nhấp vào để xem các chúng chỉ được cấp trong khoá học này:"
+msgstr "nhấp vào để xem các chúng chỉ được cấp trong Dự án Khởi nghiệp này:"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "View Certificates Issued"
@@ -18711,7 +18706,7 @@ msgid ""
 " use of {platform_name} only. It will not be linked to your public profile "
 "in any way."
 msgstr ""
-"Bạn có thể bắt đầu khoá học ngay sau khi hoàn tất form sau. Những mục bắt "
+"Bạn có thể bắt đầu Dự án Khởi nghiệp ngay sau khi hoàn tất form sau. Những mục bắt "
 "buộc được đánh dấu sao (*). Thông tin này chỉ được sử dụng bởi  "
 "{platform_name} và không có bất kì mối liên hệ nào tới hồ sơ cá nhân của "
 "bạn."
@@ -18735,7 +18730,7 @@ msgid ""
 "we can make your course experience."
 msgstr ""
 "Chúng tôi sử dụng các thông tin bạn cung cấp cho việc nghiên cứu để hiểu hơn"
-" về nhu cầu của người dùng và qua đó cải thiện các khoá học cho học viên."
+" về nhu cầu của người dùng và qua đó cải thiện các Dự án Khởi nghiệp cho học viên."
 
 #: lms/templates/survey/survey.html
 msgid "Who can I contact if I have questions?"
@@ -18778,7 +18773,7 @@ msgstr ""
 
 #: lms/templates/verify_student/incourse_reverify.html
 msgid "Re-Verify for {course_name}"
-msgstr "Xác thực lại cho khoá học {course_name}."
+msgstr "Xác thực lại cho Dự án Khởi nghiệp {course_name}."
 
 #: lms/templates/verify_student/missed_deadline.html
 msgid "Verification Deadline Has Passed"
@@ -18887,7 +18882,7 @@ msgstr "{span_start}hoạt động{span_end}"
 
 #: lms/templates/wiki/includes/breadcrumbs.html
 msgid "Course Wiki"
-msgstr "Khoá học Wiki"
+msgstr "Dự án Khởi nghiệp Wiki"
 
 #: lms/templates/wiki/includes/breadcrumbs.html
 msgid "Add article"
@@ -19138,7 +19133,7 @@ msgid ""
 "Access Course Staff Support on the Partner Portal to submit or review "
 "support tickets"
 msgstr ""
-"Truy cập Hỗ trợ Nhân viên phu trách khoá học trên Cổng Đối tác để gửi hoặc "
+"Truy cập Hỗ trợ Nhân viên phu trách Dự án Khởi nghiệp trên Cổng Đối tác để gửi hoặc "
 "xem xét thẻ hỗ trợ"
 
 #: themes/edx.org/cms/templates/widgets/sock.html
@@ -19592,7 +19587,7 @@ msgstr "Tệp & Tải lên"
 
 #: cms/templates/certificates.html
 msgid "Course Certificates"
-msgstr "Chứng chỉ của khoá học"
+msgstr "Chứng chỉ của Dự án Khởi nghiệp"
 
 #: cms/templates/certificates.html
 msgid "This module is not enabled."
@@ -19830,7 +19825,7 @@ msgstr "Tạo một Kỳ học mới của:"
 
 #: cms/templates/course-create-rerun.html
 msgid "Create a re-run of a course"
-msgstr "Khởi tạo lại một kỳ học mới của một khoá học"
+msgstr "Khởi tạo lại một kỳ học mới của một Dự án Khởi nghiệp"
 
 #: cms/templates/course-create-rerun.html
 msgid "You are creating a re-run from:"
@@ -19849,7 +19844,7 @@ msgid ""
 "Note: Together, the organization, course number, and course run must "
 "uniquely identify this new course instance."
 msgstr ""
-"Lưu ý: Tổ chức, số khoá học và kỳ học phải cùng nhau chỉ định duy nhất "
+"Lưu ý: Tổ chức, số Dự án Khởi nghiệp và kỳ học phải cùng nhau chỉ định duy nhất "
 "trường hợp khóa học mới này."
 
 #: cms/templates/course-create-rerun.html
@@ -20180,9 +20175,15 @@ msgstr ""
 msgid "Learn more about content visibility settings"
 msgstr "Tìm hiểu thêm về cách thiết lập ẩn nội dung."
 
-#: cms/templates/edit-tabs.html cms/templates/textbooks.html
+#: cms/templates/edit-tabs.html cms/templates/export.html
 #: cms/templates/widgets/header.html
 msgid "Pages & Resources"
+msgstr ""
+
+#. Translators: Custom Pages refer to the tabs that appear in the top
+#. navigation of each course.
+#: cms/templates/edit-tabs.html
+msgid "Custom Pages"
 msgstr ""
 
 #: cms/templates/edit-tabs.html
@@ -20402,7 +20403,7 @@ msgstr "Tải Thư viện đã Xuất ra"
 
 #: cms/templates/export.html
 msgid "Download Exported Course"
-msgstr "Tải Khoá học đã Xuất ra"
+msgstr "Tải Dự án Khởi nghiệp đã Xuất ra"
 
 #: cms/templates/export.html
 msgid "Data {em_start}exported with{em_end} your course:"
@@ -20592,7 +20593,7 @@ msgstr ""
 
 #: cms/templates/export_git.html
 msgid "Export Course to Git:"
-msgstr "Xuất Khoá học sang Git:"
+msgstr "Xuất Dự án Khởi nghiệp sang Git:"
 
 #: cms/templates/export_git.html
 msgid ""
@@ -20611,11 +20612,11 @@ msgstr "Xuất ra Thành công"
 
 #: cms/templates/export_git.html
 msgid "Your course:"
-msgstr "Khoá học của bạn:"
+msgstr "Dự án Khởi nghiệp của bạn:"
 
 #: cms/templates/export_git.html
 msgid "Course git url:"
-msgstr "Địa chỉ git của khoá học:"
+msgstr "Địa chỉ git của Dự án Khởi nghiệp:"
 
 #: cms/templates/group_configurations.html
 msgid "Experiment Group Configurations"
@@ -21275,7 +21276,7 @@ msgid ""
 "changed, but you can set a different display name in Advanced Settings "
 "later."
 msgstr ""
-"Tên của tổ chức tài trợ cho khoá học. {strong_start}Lưu ý: Tên tổ chức là "
+"Tên của tổ chức tài trợ cho Dự án Khởi nghiệp. {strong_start}Lưu ý: Tên tổ chức là "
 "một phần của URL khóa học.{strong_end} Không thể thay đổi được, nhưng sau "
 "này bạn có thể đặt tên hiển thị khác trong Cài đặt Nâng cao."
 
@@ -21435,7 +21436,7 @@ msgid ""
 "The course creator must give you access to the course. Contact the course "
 "creator or administrator for the course you are helping to author."
 msgstr ""
-"Người tạo ra khoá học phải cung cấp cho bạn quyền truy cập vào khóa học. "
+"Người tạo ra Dự án Khởi nghiệp phải cung cấp cho bạn quyền truy cập vào khóa học. "
 "Liên hệ với người tạo ra khóa học hoặc người quản trị khóa học mà bạn đang "
 "hỗ trợ tác giả."
 
@@ -21449,7 +21450,7 @@ msgstr "Tạo khóa học mới của bạn với một cú nhấp chuột!"
 
 #: cms/templates/index.html
 msgid "Becoming a Course Creator in {studio_name}"
-msgstr "Trở thành một Người Tạo Khoá học trong {studio_name}"
+msgstr "Trở thành một Người Tạo Dự án Khởi nghiệp trong {studio_name}"
 
 #: cms/templates/index.html
 msgid ""
@@ -21686,7 +21687,7 @@ msgstr "Tìm hiểu thêm về nội dung thư viện"
 
 #: cms/templates/manage_users.html
 msgid "Course Team Settings"
-msgstr "Thiết lập nhóm khoá học."
+msgstr "Thiết lập nhóm Dự án Khởi nghiệp."
 
 #: cms/templates/manage_users.html cms/templates/manage_users_lib.html
 msgid "New Team Member"
@@ -21737,7 +21738,7 @@ msgid ""
 "Course team members with the Staff role are course co-authors. They have "
 "full writing and editing privileges on all course content."
 msgstr ""
-"Các thành viên của nhóm điều hành khoá học có vai trò là các đồng tác giả. "
+"Các thành viên của nhóm điều hành Dự án Khởi nghiệp có vai trò là các đồng tác giả. "
 "Họ có đầy đủ quyền viết và chỉnh sửa trên tất cả các nội dung khóa học."
 
 #: cms/templates/manage_users.html
@@ -21942,7 +21943,7 @@ msgstr "Xác minh lại Trong khóa học {number}"
 
 #: cms/templates/settings.html
 msgid "Course Pacing"
-msgstr "Tốc độ Khoá học"
+msgstr "Tốc độ Dự án Khởi nghiệp"
 
 #: cms/templates/settings.html
 msgid "Set the pacing for this course"
@@ -21958,7 +21959,7 @@ msgid ""
 "You can configure release dates for course content and due dates for "
 "assignments."
 msgstr ""
-"Các khoá học có giảng viên được tiến hành theo từng bước mà tác giả của khóa"
+"Các Dự án Khởi nghiệp có giảng viên được tiến hành theo từng bước mà tác giả của khóa"
 " học đặt ra. Bạn có thể cấu hình ngày phát hành cho nội dung khóa học và "
 "ngày đến hạn cho bài tập."
 
@@ -22152,7 +22153,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Course Duration"
-msgstr "Thời lượng Khoá học"
+msgstr "Thời lượng Dự án Khởi nghiệp"
 
 #: cms/templates/settings.html
 msgid "Displayed on the course details page. Limit to 50 characters."
@@ -22271,7 +22272,7 @@ msgstr "Tải lên Banner Khóa học"
 
 #: cms/templates/settings.html
 msgid "Video Thumbnail Image"
-msgstr "Ảnh Đại diện Khoá học"
+msgstr "Ảnh Đại diện Dự án Khởi nghiệp"
 
 #: cms/templates/settings.html
 msgid ""
@@ -22354,7 +22355,7 @@ msgstr "Thời gian sử dụng cho mọi công việc của khóa học"
 
 #: cms/templates/settings.html
 msgid "Prerequisite Course"
-msgstr "Điều kiện bắt buộc Khoá học"
+msgstr "Điều kiện bắt buộc Dự án Khởi nghiệp"
 
 #: cms/templates/settings.html
 msgid "None"
@@ -22532,7 +22533,7 @@ msgstr "Điểm Tối thiểu Đủ điều kiện"
 
 #: cms/templates/settings_graders.html
 msgid "Must be greater than or equal to the course passing grade"
-msgstr "Phải lớn hơn hoặc bằng với điểm đạt khoá học"
+msgstr "Phải lớn hơn hoặc bằng với điểm đạt Dự án Khởi nghiệp"
 
 #: cms/templates/settings_graders.html
 msgid "Grading Rules & Policies"
@@ -22776,7 +22777,7 @@ msgstr ""
 #: cms/templates/emails/course_creator_admin_user_pending.txt
 msgid "To grant or deny this request, use the course creator admin table."
 msgstr ""
-"Cấp hoặc từ chối yêu cầu này, sử dụng người tạo bảng quản trị khoá học ."
+"Cấp hoặc từ chối yêu cầu này, sử dụng người tạo bảng quản trị Dự án Khởi nghiệp ."
 
 #: cms/templates/emails/course_creator_denied.txt
 msgid ""
@@ -22801,12 +22802,12 @@ msgid ""
 "Your course creation rights to {studio_name} have been revoked. If you "
 "believe this was in error, please contact {email}"
 msgstr ""
-"Quyền tạo khoá học của bạn đối với {studio_name} đã bị thu hồi. Nếu bạn cho "
+"Quyền tạo Dự án Khởi nghiệp của bạn đối với {studio_name} đã bị thu hồi. Nếu bạn cho "
 "rằng đây là lỗi, hãy liên hệ với {email}"
 
 #: cms/templates/emails/course_creator_subject.txt
 msgid "Your course creator status for {studio_name}"
-msgstr "Trạng thái người tạo khoá học của bạn cho {studio_name}"
+msgstr "Trạng thái người tạo Dự án Khởi nghiệp của bạn cho {studio_name}"
 
 #: cms/templates/emails/user_task_complete_email.txt
 msgid ""
