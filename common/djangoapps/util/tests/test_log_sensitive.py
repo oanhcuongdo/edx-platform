@@ -5,7 +5,7 @@ Tests for util.logging
 from common.djangoapps.util.log_sensitive import decrypt_log_message, encrypt_for_log, generate_reader_keys
 
 
-def test_round_trip():
+def test_encryption_round_trip():
     reader_keys = generate_reader_keys()
     reader_public_64 = reader_keys['public']
     reader_private_64 = reader_keys['private']
