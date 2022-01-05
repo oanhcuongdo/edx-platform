@@ -3,9 +3,9 @@ Utilities for logging sensitive debug information such as authentication tokens.
 
 Usage:
 
-1. Read the warning in cli_gen_keys
-2. Generate keys using ``python3 -m common.djangoapps.util.log_sensitive gen-keys``
-   and follow the instructions it prints out
+1. Generate keys using ``python3 -m common.djangoapps.util.log_sensitive gen-keys``
+2. Follow the instructions it prints out, and pay close attention to the warning
+   at the end of the output
 3. When logging sensitive information, use like so::
 
      logger.info(
@@ -128,7 +128,7 @@ def cli_gen_keys():
         "\n\n"
         f"  \"{private_64}\" (private)"
         "\n\n"
-        "Before logging anything sensitive, get a legal/compliance review to "
+        "WARNING: Before logging anything sensitive, get a legal/compliance review to "
         "ensure this is acceptable in your organization. Encryption is not "
         "generally a replacement for retention policies or other privacy "
         "safeguards; using this utility does not automatically make sensitive "
