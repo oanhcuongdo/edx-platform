@@ -10,7 +10,7 @@ Usage:
 
      logger.info(
          "Received invalid auth token %s in Authorization header",
-         encrypt_for_log(token, settings.AUTH_ERRORS_PUBLIC_KEY)
+         encrypt_for_log(token, settings.<YOUR_DEBUG_PUBLIC_KEY>)
      )
 
    This will log a message like::
@@ -121,7 +121,7 @@ def cli_gen_keys():
         "configuration. Create a separate setting (and keypair) for each "
         "distinct project or team. This value does not need special protection:"
         "\n\n"
-        f"  \"{public_64}\" (public)"
+        f"  settings.<YOUR_DEBUG_PUBLIC_KEY> = \"{public_64}\""
         "\n\n"
         "This is your PRIVATE key, which must never be present on the server "
         "and should instead be kept encrypted in a separate, safe place "
