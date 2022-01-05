@@ -10,7 +10,7 @@ Usage:
 
      logger.info(
          "Received invalid auth token %s in Authorization header",
-         encrypt_for_log(token, settings.AUTH_ERRORS_DEBUG_KEYS)
+         encrypt_for_log(token, settings.AUTH_ERRORS_PUBLIC_KEY)
      )
 
    This will log a message like::
