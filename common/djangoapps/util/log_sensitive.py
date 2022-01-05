@@ -63,10 +63,11 @@ logger_private_key = PrivateKey.generate()
 
 def encrypt_for_log(message, reader_public_key_b64):
     """
-    Encrypt a message so that it can be logged but only read by someone
-    possessing the given public key. The public key is provided in base64.
+    Encrypt a message so that it can be logged using the given public key,
+    but only read by someone possessing the matching private key. The
+    public key is provided in base64.
 
-    A separate public key should be used for each recipient or purpose.
+    A separate keypair should be used for each recipient or purpose.
 
     Returns a string <sender public key> "|" <ciphertext> which can be
     decrypted with decrypt_log_message.
